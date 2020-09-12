@@ -25,7 +25,29 @@ Add plugin to the list of TPM plugins in .tmux.conf:
 
     `set -g @plugin 'tmux-plugins/tmux-macros'`
 
-Install the Plugin using TPM
+Install the Plugin using TPM <Prefix> I
+   
+## Manual Installation
+
+Clone the Plugin Code
+
+
+```
+mkdir -p $HOME/.tmux-plugins/tmux-macros/
+
+git clone https://github.com/prp311/tmux-macros.git $HOME/.tmux-plugins/tmux-macros/ 
+```
+
+Add below line to $HOME/.tmux.conf
+
+```
+run-shell $HOME/.tmux-plugins/tmux-macros/
+```
+run command
+
+```
+tmux source $HOME/.tmux.conf
+```
 
 ## Modifying default configuration, if needed
 
