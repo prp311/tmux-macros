@@ -15,6 +15,7 @@ This plugin also offers editing the macro and or selecting certain texts only.  
 # Installation Procedure
 
 ## Dependencies
+
     * fzf (should be available in PATH)
     * vim (should be available in PATH)
     * bash
@@ -22,9 +23,9 @@ This plugin also offers editing the macro and or selecting certain texts only.  
 ## Using Tmux Plugin Manager
 
 Add plugin to the list of TPM plugins in .tmux.conf:
-
-    `set -g @plugin 'tmux-plugins/tmux-macros'`
-
+```
+set -g @plugin 'tmux-plugins/tmux-macros'
+```
 Install the Plugin using TPM <Prefix> I
    
 ## Manual Installation
@@ -52,11 +53,11 @@ tmux source $HOME/.tmux.conf
 ## Modifying default configuration, if needed
 
 add lines to tmux.conf with modified values, if different directory and shortcut key is used
+```
+    set -g @tmux_macros_dir '$HOME/.tmux-macros/' 
 
-    `set -g @tmux_macros_dir '$HOME/.tmux-macros/'` 
-
-    `set -g @tmux_macros_key 'F1'`
-
+    set -g @tmux_macros_key 'F1'
+```
 ## set up macro directory
 
     create @tmux_macros_dir and add your macro files there
