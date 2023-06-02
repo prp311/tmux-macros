@@ -4,7 +4,7 @@ current_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 source $current_dir/scripts/tmux-utils.sh
 
-key=$(get_tmux_option tmux_macros_key "F1")
+key=$(get_tmux_option '@tmux_macros_key' "F1")
 
 macros_dir=$(get_tmux_option '@tmux_macros_dir' "$HOME/.tmux-macros/")
 
